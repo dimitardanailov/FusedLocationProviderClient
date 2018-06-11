@@ -7,7 +7,7 @@ to [Address](https://developer.android.com/reference/android/location/Address)
 
 Screenshot: ![FusedLocationProviderClient](https://raw.githubusercontent.com/dimitardanailov/FusedLocationProviderClient/master/demos/FusedLocationProviderClient.png)
 
-Demo: 
+Demo: [Youtube: FusedLocationProviderClient demo Application](https://www.youtube.com/watch?v=ol5qhVeG-YQ)
 
 Resources: 
 - [FusedLocationProviderClient](https://developers.google.com/android/reference/com/google/android/gms/location/FusedLocationProviderClient)
