@@ -8,4 +8,24 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="LayoutTheme">
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <!-- Fields -->
+    <style name="CustomLabel">
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="CustomValue">
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginLeft">4dp</item>
+    </style>
+    <!-- Fields -->
+
+    <!-- Button -->
+    <style name="CustomButton">
+        <item name="android:layout_marginTop">210dp</item>
+    </style>
+    <!-- Button -->
+
 </resources>

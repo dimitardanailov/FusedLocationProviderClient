@@ -1,18 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LayoutTheme"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    xmlns:tools="http://schemas.android.com/tools">
 
+    <!-- Latitude -->
     <TextView
+        android:id="@+id/latitude_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="@string/latitude"
+        style="@style/CustomLabel"/>
+    
+    <TextView
+        tools:text="42.3569"
+        android:id="@+id/latitude_value"
+        android:layout_toRightOf="@+id/latitude_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/CustomValue"/>
+    <!-- Latitude -->
 
-</android.support.constraint.ConstraintLayout>
+    <!-- Longitude -->
+    <TextView
+        android:id="@+id/longitude_label"
+        android:layout_below="@+id/latitude_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/longitude"
+        style="@style/CustomLabel"/>
+
+    <TextView
+        tools:text="22.3569"
+        android:id="@+id/longitude_value"
+        android:layout_toRightOf="@+id/longitude_label"
+        android:layout_below="@+id/latitude_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/CustomValue"/>
+    <!-- Longitude -->
+
+    <!-- Timestamp -->
+    <TextView
+        android:id="@+id/timestamp_label"
+        android:layout_below="@+id/longitude_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/timestamp"
+        style="@style/CustomLabel"/>
+
+    <TextView
+        tools:text="03.48.41 PM"
+        android:id="@+id/timestamp_value"
+        android:layout_toRightOf="@+id/timestamp_label"
+        android:layout_below="@+id/longitude_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/CustomValue"/>
+    <!-- Timestamp -->
+
+    <!-- Address -->
+    <TextView
+        android:id="@+id/address_label"
+        android:layout_below="@+id/timestamp_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/address"
+        style="@style/CustomLabel"/>
+
+    <TextView
+        tools:text="Address ..."
+        android:id="@+id/address_value"
+        android:layout_toRightOf="@+id/timestamp_label"
+        android:layout_below="@+id/timestamp_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/CustomValue"/>
+    <!-- Address -->
+
+    <Button
+        android:id="@+id/get_location"
+        android:layout_below="@+id/address_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/get_location"
+        android:textAlignment="center" />
+
+</RelativeLayout>

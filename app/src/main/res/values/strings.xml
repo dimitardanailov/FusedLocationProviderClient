@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">FusedLocationProviderClientExample</string>
+    <string name="latitude">Latitude:</string>
+    <string name="longitude">Longitude:</string>
+    <string name="timestamp">Timestamp:</string>
+    <string name="address">Address:</string>
+    <string name="get_location">Get Location</string>
+    <string name="location_permission_denied">Application can\'t access get location</string>
+    <string name="no_location">This application can\'t access the get location</string>
+    <string name="service_not_available">Service not available</string>
+    <string name="no_address_found">No address found</string>
 </resources>
