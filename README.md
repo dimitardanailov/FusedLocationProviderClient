@@ -1,13 +1,11 @@
-Current application is able to get geo location
+Current application is able to get Geo Location (`Latitude` and `Longitude`). Application is using [FusedLocationProviderClient](https://developers.google.com/android/reference/com/google/android/gms/location/FusedLocationProviderClient)
 
-Application is using [FusedLocationProviderClient](https://developers.google.com/android/reference/com/google/android/gms/location/FusedLocationProviderClient)
+_What is FusedLocationProviderClient_ : The main entry point for interacting with the fused location provider.
 
-_What is FusedLocationProviderClient ?_: The main entry point for interacting with the fused location provider.
+Current application can access: `Latitude`, `Longitude` and `Timestamp` of operation. Application could transform [`Location`](https://developer.android.com/training/location/retrieve-current).
+to [Address](https://developer.android.com/reference/android/location/Address)
 
-Current application could access: `Latitude`, `Longitude` and `Timestamp` of operation. Application could transform [`Location`](https://developer.android.com/training/location/retrieve-current).
-Application is transform [`Location`](https://developer.android.com/training/location/retrieve-current) to [Address](https://developer.android.com/reference/android/location/Address)
-
-Screenshot:
+Screenshot: ![FusedLocationProviderClient](https://raw.githubusercontent.com/dimitardanailov/FusedLocationProviderClient/master/demos/FusedLocationProviderClient.png)
 
 Demo: 
 
